@@ -43,7 +43,7 @@ my_libraryについては、貸し出し期限の期日になったらアラー�
 - my_libraryの貸出期日アラートメール機能
 
 # データベース設計	
-.ER図
+ER図
 ![ER図](world_book_shelf.drawio.png)
 
 # ローカルでの動作方法	
