@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_11_12_025036) do
     t.string "name", default: "", null: false
     t.integer "genre_id", null: false
     t.string "genre"
-    t.string "punlisher", default: "", null: false
+    t.string "publisher", default: "", null: false
     t.text "explanation"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

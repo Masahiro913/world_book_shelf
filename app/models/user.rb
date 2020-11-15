@@ -9,4 +9,6 @@ class User < ApplicationRecord
     validates :password, format: { with: /\A[a-z0-9]+\z/i} 
     validates :nickname
   end
+
+  has_many :books
 end

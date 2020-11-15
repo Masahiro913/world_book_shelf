@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration[6.0]
       t.string  :name,         null: false, default: ""
       t.integer :genre_id,     null: false
       t.string  :genre
-      t.string  :punlisher,    null: false, default: ""
+      t.string  :publisher,    null: false, default: ""
       t.text    :explanation
       t.integer :user_id,      null: false
       t.timestamps
