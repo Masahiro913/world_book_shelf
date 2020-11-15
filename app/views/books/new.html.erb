@@ -1,5 +1,5 @@
 <%= render "shared/second-header" %>
-<%= form_with model: @book, url: books_path do |f| %>
+<%= form_with model: @book, url: books_path, local: true do |f| %>
   <div class = "label">
     <%= f.label "名前"%>
   </div>
@@ -16,7 +16,7 @@
     <%= f.label "ジャンルその他"%>
   </div>
   <div class = "field">
-    <%= f.text_field :genre%>
+    <%= f.text_field :exception%>
   </div>
   <div class = "label">
   <%= f.label "出版社"%>
@@ -31,6 +31,6 @@
     <%= f.text_field :explanation%>
   </div>
   <div class = "submit">
-    <%= f.submit "本を登録"%>
+    <%= f.submit "本を登録", class:"submit-btn"%>
   </div>
 <% end %>

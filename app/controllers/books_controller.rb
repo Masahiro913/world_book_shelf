@@ -7,7 +7,7 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(books_params)
+    @book = Book.new(book_params)
     if @book.save
       redirect_to root_path
     else
@@ -16,7 +16,7 @@ class BooksController < ApplicationController
   end
 
   private
-  def books_params
+  def book_params
     params.require(:book).permit(:name, :genre_id, :genre, :publisher, :explanation).merge(user_id: current_user.id)
   end
 end
