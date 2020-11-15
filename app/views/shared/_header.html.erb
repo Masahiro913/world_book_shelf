@@ -1,0 +1,14 @@
+<header class = "header">
+  <div class = "main">
+    <li><%= link_to image_tag("logo.png", class:"logo"), "/" %></li>
+  </div>
+  <% unless user_signed_in? %>
+    <%= link_to "ログイン", new_user_session_path, class:"login-btn"%>
+    <%= link_to "新規登録", new_user_registration_path, class:"signup-btn"%>
+  <% else %>
+    <strong class = "show-user">
+      <%= "#{current_user.nickname}の本棚"%>
+    </strong>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout-btn"%>
+  <% end %>
+</header>
