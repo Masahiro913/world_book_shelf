@@ -1,15 +1,19 @@
-* {
-  box-sizing: border-box;
+.header{
 }
-
-.wrapper{
+.main{
+  background-color:#add8e6;
+  height: 70px;
   display: flex;
-  background-color: skyblue;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100vw;
 }
 .logo{
+  height: 70px;
+  width: auto;
   margin-left: 20px;
-  margin-top: 10px;
+  text-decoration: none;
 }
-.login-btn{
-  
+.show-user{
 }
