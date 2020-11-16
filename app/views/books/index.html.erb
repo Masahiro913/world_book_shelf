@@ -1,2 +1,13 @@
 <%= render "shared/header"%>
 <%= link_to "本を登録する", new_book_path%>
+  <div class = "book-list">
+  <% if user_session %>
+    <% @books.each do |book| %>
+      <div class = "book">
+        <% if book.user_id == current_user.id %>
+          <%= book.name%>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+  </div>
